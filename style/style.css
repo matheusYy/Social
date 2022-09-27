@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html, body {
+  background-color: black;
+  height: 100vh;
+}
+main {
+  position: relative;
+  height: 100vh;
+}
+body {
+  background: url(../img/imagens/fundo-madeira.jpg) center center;
+  background-size: cover; /*Serve para não deixar rolagem na imagem*/
+  background-attachment: fixed; /*Deixa a imagem fixada\*/
+}
+.fone {
+  position: absolute;
+  background-color: aqua;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  width: 310px;
+  height: 474px;
+  background: url(../img/imagens/frame-iphone.png) no-repeat center center;
+  background-size: 75%;
+}
+.io-iframe {
+  position: relative;
+  top: 62px;
+  left: 54px;
+  width: 203px;
+  height: 354px
+  
+}
+
+section > a > img {
+  width: 54px;
+  margin: 10px;   
+  border-radius: 50%;
+  box-shadow: 1px 1px 4px rgb(0, 0, 0);
+  text-align: end;
+}
+/*Muda o tamnho dos icones e deixa todos eles redondos com border-radius: 50%
+alinha eles com text-align*/
+
+section > a > img:hover {
+  box-shadow: 0px 1px 6px rgb(1, 149, 169);
+  transition: box-shadow .4s, border .2s, transform .5s;
+  border: 2px solid rgba(231, 231, 231, 0.829);
+  box-sizing: border-box;
+  transform: translate(0px, -3px);
+}
+/*transition dá um efeito de deley nas configuraçoes, exatamente oque eu precisava anotar (IMORTANTE)
+border = adiciona a borda branca
+transform = muda a posiçao 
+
+lembrando que todas as imagens estão ligadas as pseudo classe :hover
+*/
+
+.social {
+  text-align: end;
+}
